@@ -1,6 +1,7 @@
 import streamlit as st
 import folium
 from folium import plugins
+from streamlit_folium import st_folium
 import common
 
 common.page_config()
@@ -65,4 +66,4 @@ st.sidebar.title("시군별 병원 및 의료센터")
 st.sidebar.markdown("* 시군별 병원 및 의료센터 숫자와 위치를 알 수 있습니다.  \n* 위치를 클릭하면, 병원 이름과 대표 번호 및 특수 센터 보유 여부를 알 수 있습니다.")
 
 # 지도 출력
-folium(m)
+st_folium(m)
